@@ -1,0 +1,84 @@
+control flow:
+control flow statements are the statements which are used to control the flow of code that needs to be executed.
+controlling statements
+if else
+if elif else
+
+looping statements:
+for 
+while
+
+jumping statements
+continue 
+break
+return
+
+
+functions:
+a function in python is defined using def keyword, a function is re-useable block of code which have particular operation to perform.
+example:
+def reverse_string(s):
+   return s[::-1]
+
+return is used to return a output and then terminating the loop.
+
+*args:
+when we dont know how many number of positional arguments will be passed in function then we simply use *args.
+
+args is just a name → you can write anything
+def test(*numbers):
+    print(numbers)
+
+**kwargs:
+
+
+
+scope in python:
+scope in python means a particular variable can be accessed from which part of location in a code.
+
+different scopes in python:
+
+local: local scopes means if a variable is defined inside a function then it can only be accessed inside that function.
+global: global scope means a variable can be accessed from anywhere in a code no matters if its defined inside a function or not.
+enclosing: enclosing scope means if there are two function outer and inner function then outer functions variable is accessed in inner function but inner functions variable is not accessible in outer function.
+built-in: contains all predefined functions and objects in python like print(), len() etc.
+
+
+modules:
+a file saved with .py extension is a module.
+and using import we can import the user created as well as built in modules or any specific function from that module.
+
+stdlib: standard library- python comes with built in libraries , no need of installation.
+
+1.OS library:
+it is used to interact with os files.
+some functions are:
+os.getcwd()
+os.listdir()
+os.mkdir()
+os.rmdir()
+os.path.exists()
+os.rename()
+
+2.sys module:
+it is used for system level interaction.
+some functions are:
+sys.version
+sys.argv
+sys.exit()
+
+3. Pathlib:
+it is used for path handling but its cleaner and style is object oriented like we create a object of Path and then using it we access methods or functions of lib.
+some functions are:
+p=Path()
+p.exists()
+p.name
+p.suffix
+p.mkdir()
+p.touch()
+
+
+note:
+os.path.exists() in os and Path.exists() in pathlib both have same functionality
+os.path.join() in os and / operator also used to perform same tasks.
+os is procedural type and pathlib is object oriented type.
